@@ -1,0 +1,6 @@
+# generated project build files
+bin
+obj
+
+# OS specific files
+.DS_Store
