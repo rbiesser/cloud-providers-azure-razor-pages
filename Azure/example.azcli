@@ -1,0 +1,16 @@
+# Right-click these commands and run in the editor or in the terminal
+# Type new commands to use intellisense matching the Reference pages
+# https://docs.microsoft.com/en-us/cli/azure/reference-index?view=azure-cli-latest
+
+# You must be logged in before performing any requests with Azure CLI
+# Opens your browser to login securely
+az login
+
+# List supported regions
+az account list-locations
+
+# List vm sizes
+# It doesn't look like they have made pricing available through the cli yet
+# Use intellisense to pick a different location
+az vm list-sizes --location eastus
+az vm list-skus --location eastus --zone --size Standard_B2ms

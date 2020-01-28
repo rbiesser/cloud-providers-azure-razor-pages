@@ -1,0 +1,8 @@
+﻿@page
+@namespace MyApp.Namespace
+@model GeoJsonModel
+@{
+    Layout = null; // don't use /Shared/_Layout.cshtml
+}
+@* make sure to sanitize anything that gets passed to Html.Raw *@
+@Html.Raw(ViewData["JsonString"])
