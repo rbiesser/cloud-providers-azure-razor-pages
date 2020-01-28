@@ -40,6 +40,8 @@ namespace MyApp.Namespace
                     azureCLILocations = 
                         System.Text.Json.JsonSerializer.Deserialize<List<AzureCLILocationPOCO>>(sr.ReadToEnd());
 
+                    // Referenced FeatureCollection Unit Test for usage
+                    // https://github.com/GeoJSON-Net/GeoJSON.Net/blob/master/src/GeoJSON.Net.Tests/Feature/FeatureCollectionTests.cs
                     var model = new FeatureCollection();
                     foreach (var location in azureCLILocations)
                     {
@@ -50,9 +52,7 @@ namespace MyApp.Namespace
                         var props = new Dictionary<string, object>
                         {
                             { "region", location.displayName },
-                            // { "icon", "monument" }
                             { "message", location.name },
-                            // { "iconSize", "[40, 40]" }
                         };
 
                         var feature = new Feature(geom, props);

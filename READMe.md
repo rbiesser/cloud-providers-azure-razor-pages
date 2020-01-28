@@ -2,9 +2,8 @@ Cloud Computing Providers
 ---
 Just a little project playing around with the Azure CLI and Mapbox that plots Microsoft's Azure Data Centers on a map.
 
-Created by following the tutorial located at:
-
-https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-3.1&tabs=visual-studio-code
+# Published to Azure App Service
+- https://ccp555.azurewebsites.net/
 
 # Prerequisites
 - [Visual Studio Code](https://code.visualstudio.com/Download)
@@ -12,8 +11,9 @@ https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-s
 - [.NET CORE 3.1 SDK or later](https://dotnet.microsoft.com/download)
 - [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 
-# Create a Razor Pages web app
+# Create a Razor Pages webapp
 - Create a new folder to contain the project
+- [Razor Pages Start Tutorial](https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-3.1&tabs=visual-studio-code)
 ```
 dotnet new webapp
 ```
@@ -54,6 +54,10 @@ az account list-locations
 - [JSON Serialization .NET Guide](https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-overview)
 - .NET has adopted the [Newtonsoft Json.NET](https://www.newtonsoft.com/json) project into the Core Framework
 
+# GeoJson<span></span>.Net
+- https://www.nuget.org/packages/GeoJSON.Net/
+- [GeoJson Specification RFC 7946](https://geojson.org/)
+
 # Razor Pages
 - Why is the concept of ViewData and ViewBags not documented better? [Learn Razor Pages Article](https://www.learnrazorpages.com/razor-pages/viewdata) is the first I found to discuss it.
 - And then I found it buried here in the [ASP.NET Core Documentation](https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-2.1&tabs=visual-studio#viewdata-attribute-1)
@@ -63,4 +67,3 @@ az account list-locations
 # Other Resources
 - [GitHub Markdown Guide](https://guides.github.com/features/mastering-markdown/)
 - [NuGet Package Manager](https://www.nuget.org/)
-- [GeoJson Specification RFC 7946](https://geojson.org/)

@@ -22,6 +22,7 @@
 }
 @section Scripts{
     <script>
+    @* https://docs.mapbox.com/mapbox-gl-js/example/geojson-markers/ *@
     mapboxgl.accessToken = 'pk.eyJ1IjoiZHM1ZXhwemFiaTZ2Y290dmJsOGQiLCJhIjoiY2s1dnF6YXdiMTBudjNtbWM5cnNhb2I1NCJ9.pyXawY1GuU3ixXc6ys23OQ';
     var map = new mapboxgl.Map({
         container: 'map',
@@ -29,44 +30,37 @@
         center: [-96, 37.8],
         zoom: 3
     });
-    
+    @* https://docs.mapbox.com/mapbox-gl-js/example/add-image/ *@
     map.on('load', function() {
         map.loadImage(
             '/img/azure.png',
             function(error, image) {
                 if (error) throw error;
                 map.addImage('azure', image);
-        map.addLayer({
-            id: 'azure',
-            source: {
-                type: 'geojson',
-                data: 'GeoJson' // request from GeoJson route on the localhost
-            },
-            type: 'symbol',
-            paint: {
-                // Mapbox Style Specification paint properties
-            },
-            layout: {
-                // get the icon name from the source's "icon" property
-                // concatenate the name to get an icon from the style's sprite sheet
-                // 'icon-image': ['concat', ['get', 'icon'], '-15'],
-                //'icon-image': ['concat', ['get', 'azure']],
-                'icon-image': 'azure',
-                'icon-size': 0.5,
-                // get the title name from the source's "title" property
-                // Mapbox Style Specification layout properties
-                'text-field': ['get', 'region'],
-                'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
-                'text-offset': [0, 0.8],
-                'text-anchor': 'top'
-            }
-        });
+                map.addLayer({
+                    id: 'azure',
+                    source: {
+                        type: 'geojson',
+                        data: 'GeoJson' // request from GeoJson route on the localhost
+                    },
+                    type: 'symbol',
+                    paint: {
+                        // Mapbox Style Specification paint properties
+                    },
+                    layout: {
+                        'icon-image': 'azure',
+                        'icon-size': 0.5,
+                        // Mapbox Style Specification layout properties
+                        'text-field': ['get', 'region'],
+                        'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+                        'text-offset': [0, 0.8],
+                        'text-anchor': 'top'
+                    }
+                });
 
             });
 
         map.addControl(new mapboxgl.FullscreenControl({container: document.querySelector('body')}));
-
-        
     });
     </script>
 }
