@@ -41,7 +41,7 @@
                     id: 'azure',
                     source: {
                         type: 'geojson',
-                        data: 'GeoJson' // request from GeoJson route on the localhost
+                        data: 'GeoJson?name=azure' // request from GeoJson route on the localhost
                     },
                     type: 'symbol',
                     paint: {
@@ -57,6 +57,34 @@
                         'text-anchor': 'top'
                     }
                 });
+
+        map.loadImage(
+            '/img/Amazon_Web_Services_Logo.png',
+            function(error, image) {
+                if (error) throw error;
+                map.addImage('aws', image);
+                map.addLayer({
+                    id: 'aws',
+                    source: {
+                        type: 'geojson',
+                        data: 'GeoJson?name=aws' // request from GeoJson route on the localhost
+                    },
+                    type: 'symbol',
+                    paint: {
+                        // Mapbox Style Specification paint properties
+                    },
+                    layout: {
+                        'icon-image': 'aws',
+                        'icon-size': 0.14,
+                        // Mapbox Style Specification layout properties
+                        'text-field': ['get', 'region'],
+                        'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+                        'text-offset': [0, 0.8],
+                        'text-anchor': 'top'
+                    }
+                });
+
+            });
 
             });
 

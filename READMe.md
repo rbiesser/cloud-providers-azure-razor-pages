@@ -67,3 +67,11 @@ az account list-locations
 # Other Resources
 - [GitHub Markdown Guide](https://guides.github.com/features/mastering-markdown/)
 - [NuGet Package Manager](https://www.nuget.org/)
+
+# Microsoft Azure
+- [Azure Regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
+- [Azure Documentation](https://docs.microsoft.com/en-us/azure/)
+
+# Amazon AWS
+- [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)
+- [AWS Documentation](https://docs.aws.amazon.com/)

@@ -14,7 +14,8 @@ using Newtonsoft.Json;
 namespace MyApp.Namespace
 {
     // a POCO to match the JSON comming from Azure CLI
-    public class AzureCLILocationPOCO 
+    // write python script to match others to common structure
+    public class LocationPOCO 
     {
         public string displayName { get; set; }
         public string id { get; set; }
@@ -22,7 +23,8 @@ namespace MyApp.Namespace
         public string longitude { get; set; }
         public string name { get; set; }
         public string subscriptionId { get; set; }
-    }
+        public string ip_prefix { get; set; }
+    } // end class LocationPOCO
     
     public class GeoJsonModel : PageModel
     {
@@ -30,20 +32,58 @@ namespace MyApp.Namespace
         public string JsonString { get; set; }
         public void OnGet()
         {
+            var json = "";
+            var name = HttpContext.Request.Query["name"];
+
+            switch (name)
+            {
+                case "azure":
+                    json = "Azure/list-locations.json";
+                    break;
+                case "aws":
+                    json = "AWS/aws-regions.json";
+                    break;   
+            }
+            
+            var model = PrepareGeoJsonFromPOCO(json);
+
+            // serialize to Json string
+            var options = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+            };
+            
+            // tried using the System version
+            // JsonString = System.Text.Json.JsonSerializer.Serialize(model, options);
+
+            // GeoJson.NET library doesn't work with the System version yet, so still
+            // using Newtonsoft version
+            JsonString = Newtonsoft.Json.JsonConvert.SerializeObject(model);
+            
+            // Console.WriteLine(JsonString);
+
+        }
+
+        /**
+         * Azure locations can be obtained from their CLI, but only contain locations you 
+         * have access to in your subscription. 
+         */
+        private FeatureCollection PrepareGeoJsonFromPOCO(string json) 
+        {
             try 
             {
                 // Convert the result from Azure CLI output file to GeoJson and deliver to mapbox
-                using (StreamReader sr = new StreamReader("Azure/list-locations.json"))
+                using (StreamReader sr = new StreamReader(json))
                 {
                     // deserialize Json to List of POCOs
-                    var azureCLILocations = new List<AzureCLILocationPOCO>();
-                    azureCLILocations = 
-                        System.Text.Json.JsonSerializer.Deserialize<List<AzureCLILocationPOCO>>(sr.ReadToEnd());
+                    var locations = new List<LocationPOCO>();
+                    locations = 
+                        System.Text.Json.JsonSerializer.Deserialize<List<LocationPOCO>>(sr.ReadToEnd());
 
                     // Referenced FeatureCollection Unit Test for usage
                     // https://github.com/GeoJSON-Net/GeoJSON.Net/blob/master/src/GeoJSON.Net.Tests/Feature/FeatureCollectionTests.cs
                     var model = new FeatureCollection();
-                    foreach (var location in azureCLILocations)
+                    foreach (var location in locations)
                     {
                         var geom = new Point(
                             new Position(location.latitude, location.longitude)
@@ -59,20 +99,8 @@ namespace MyApp.Namespace
                         model.Features.Add(feature);
                     }
 
-                    // serialize to Json string
-                    var options = new JsonSerializerOptions
-                    {
-                        WriteIndented = true,
-                    };
+                    return model;
                     
-                    // tried using the System version
-                    // JsonString = System.Text.Json.JsonSerializer.Serialize(model, options);
-
-                    // GeoJson.NET library doesn't work with the System version yet, so still
-                    // using Newtonsoft version
-                    JsonString = Newtonsoft.Json.JsonConvert.SerializeObject(model);
-                    
-                    // Console.WriteLine(JsonString);
                 }
             }
             catch (Exception e) 
@@ -80,7 +108,8 @@ namespace MyApp.Namespace
                 // Let the user know what went wrong.
                 Console.WriteLine("The file could not be read:");
                 Console.WriteLine(e.Message);
+                return null;
             }
         }
-    }
+    } // end class GeoJsonModel
 }

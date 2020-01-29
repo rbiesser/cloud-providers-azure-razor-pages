@@ -1,0 +1,194 @@
+[
+  {
+    "ip_prefix": "13.248.118.0/24", 
+    "displayName": "Eu West 1", 
+    "name": "eu-west-1", 
+    "service": "AMAZON", 
+    "longitude": "-6.24333000183", 
+    "latitude": "53.3538894653"
+  }, 
+  {
+    "ip_prefix": "18.208.0.0/13", 
+    "displayName": "Us East 1", 
+    "name": "us-east-1", 
+    "service": "AMAZON", 
+    "longitude": "-77.4741973877", 
+    "latitude": "39.0437011719"
+  }, 
+  {
+    "ip_prefix": "54.240.17.0/24", 
+    "displayName": "Ap East 1", 
+    "name": "ap-east-1", 
+    "service": "AMAZON", 
+    "longitude": "114.10949707", 
+    "latitude": "22.3964004517"
+  }, 
+  {
+    "ip_prefix": "52.194.0.0/15", 
+    "displayName": "Ap Northeast 1", 
+    "name": "ap-northeast-1", 
+    "service": "AMAZON", 
+    "longitude": "139.738555908", 
+    "latitude": "35.6962814331"
+  }, 
+  {
+    "ip_prefix": "99.78.170.0/23", 
+    "displayName": "Ap Southeast 2", 
+    "name": "ap-southeast-2", 
+    "service": "AMAZON", 
+    "longitude": "151.207107544", 
+    "latitude": "-33.8671417236"
+  }, 
+  {
+    "ip_prefix": "52.94.22.0/24", 
+    "displayName": "Us Gov East 1", 
+    "name": "us-gov-east-1", 
+    "service": "AMAZON", 
+    "longitude": "-82.999458313", 
+    "latitude": "39.9955787659"
+  }, 
+  {
+    "ip_prefix": "52.95.255.112/28", 
+    "displayName": "Us West 2", 
+    "name": "us-west-2", 
+    "service": "AMAZON", 
+    "longitude": "-119.811431885", 
+    "latitude": "45.7372283936"
+  }, 
+  {
+    "ip_prefix": "52.94.17.0/24", 
+    "displayName": "Eu Central 1", 
+    "name": "eu-central-1", 
+    "service": "AMAZON", 
+    "longitude": "8.68210029602", 
+    "latitude": "50.1109008789"
+  }, 
+  {
+    "ip_prefix": "52.95.154.0/23", 
+    "displayName": "Eu West 3", 
+    "name": "eu-west-3", 
+    "service": "AMAZON", 
+    "longitude": "2.34106993675", 
+    "latitude": "48.8602294922"
+  }, 
+  {
+    "ip_prefix": "52.95.212.0/22", 
+    "displayName": "Ap Southeast 1", 
+    "name": "ap-southeast-1", 
+    "service": "AMAZON", 
+    "longitude": "103.819801331", 
+    "latitude": "1.32000005245"
+  }, 
+  {
+    "ip_prefix": "54.239.0.240/28", 
+    "displayName": "Eu West 2", 
+    "name": "eu-west-2", 
+    "service": "AMAZON", 
+    "longitude": "0", 
+    "latitude": "51.5122184753"
+  }, 
+  {
+    "ip_prefix": "54.241.0.0/16", 
+    "displayName": "Us West 1", 
+    "name": "us-west-1", 
+    "service": "AMAZON", 
+    "longitude": "-121.838226318", 
+    "latitude": "37.3305282593"
+  }, 
+  {
+    "ip_prefix": "13.248.106.0/24", 
+    "displayName": "Me South 1", 
+    "name": "me-south-1", 
+    "service": "AMAZON", 
+    "longitude": "50.5847206116", 
+    "latitude": "26.2277793884"
+  }, 
+  {
+    "ip_prefix": "52.219.64.0/22", 
+    "displayName": "Ap South 1", 
+    "name": "ap-south-1", 
+    "service": "AMAZON", 
+    "longitude": "72.8777008057", 
+    "latitude": "19.0760002136"
+  }, 
+  {
+    "ip_prefix": "52.92.72.0/22", 
+    "displayName": "Sa East 1", 
+    "name": "sa-east-1", 
+    "service": "AMAZON", 
+    "longitude": "-46.633140564", 
+    "latitude": "-23.5515193939"
+  }, 
+  {
+    "ip_prefix": "13.125.0.0/16", 
+    "displayName": "Ap Northeast 2", 
+    "name": "ap-northeast-2", 
+    "service": "AMAZON", 
+    "longitude": "126.620361328", 
+    "latitude": "37.4735488892"
+  }, 
+  {
+    "ip_prefix": "13.248.24.0/22", 
+    "displayName": "Ap Northeast 3", 
+    "name": "ap-northeast-3", 
+    "service": "AMAZON", 
+    "longitude": "135.507507324", 
+    "latitude": "34.6709403992"
+  }, 
+  {
+    "ip_prefix": "54.222.59.0/24", 
+    "displayName": "Cn North 1", 
+    "name": "cn-north-1", 
+    "service": "AMAZON", 
+    "longitude": "116.379226685", 
+    "latitude": "39.9117584229"
+  }, 
+  {
+    "ip_prefix": "13.248.100.0/24", 
+    "displayName": "Eu North 1", 
+    "name": "eu-north-1", 
+    "service": "AMAZON", 
+    "longitude": "18.0513191223", 
+    "latitude": "59.315120697"
+  }, 
+  {
+    "ip_prefix": "52.93.5.0/24", 
+    "displayName": "Ca Central 1", 
+    "name": "ca-central-1", 
+    "service": "AMAZON", 
+    "longitude": "-73.5620117188", 
+    "latitude": "45.50207901"
+  }, 
+  {
+    "ip_prefix": "52.46.224.0/20", 
+    "displayName": "Us Gov West 1", 
+    "name": "us-gov-west-1", 
+    "service": "AMAZON", 
+    "longitude": "-119.811431885", 
+    "latitude": "45.7372283936"
+  }, 
+  {
+    "ip_prefix": "52.95.0.0/20", 
+    "displayName": "Us East 2", 
+    "name": "us-east-2", 
+    "service": "AMAZON", 
+    "longitude": "-82.999458313", 
+    "latitude": "39.9955787659"
+  }, 
+  {
+    "ip_prefix": "52.82.187.0/24", 
+    "displayName": "Cn Northwest 1", 
+    "name": "cn-northwest-1", 
+    "service": "AMAZON", 
+    "longitude": "106.284439087", 
+    "latitude": "38.4538917542"
+  }, 
+  {
+    "ip_prefix": "52.95.175.0/24", 
+    "displayName": "Af South 1", 
+    "name": "af-south-1", 
+    "service": "AMAZON", 
+    "longitude": "18.424100875854492", 
+    "latitude": "-33.92490005493164"
+  }
+]
