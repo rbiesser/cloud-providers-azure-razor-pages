@@ -42,7 +42,10 @@ namespace MyApp.Namespace
                     break;
                 case "aws":
                     json = "AWS/aws-regions.json";
-                    break;   
+                    break;  
+                case "gcp":
+                    json = "GCP/gcp-regions.json";
+                    break; 
             }
             
             var model = PrepareGeoJsonFromPOCO(json);

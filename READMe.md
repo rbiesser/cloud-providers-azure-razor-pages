@@ -75,3 +75,7 @@ az account list-locations
 # Amazon AWS
 - [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/)
 - [AWS Documentation](https://docs.aws.amazon.com/)
+
+# Google Cloud Platform
+- [GCP Global Infrastructure](https://cloud.withgoogle.com/infrastructure)
+- [GCP Documentation](https://cloud.google.com/docs)

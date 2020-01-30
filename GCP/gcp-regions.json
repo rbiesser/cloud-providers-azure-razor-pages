@@ -1,0 +1,149 @@
+[
+  {
+  "latitude": "37.42250", 
+  "displayName": "California", 
+  "network": "2600:1900::", 
+  "longitude": "-122.08400", 
+  "name": "Mountain View"
+},
+{
+  "latitude": "50.833600", 
+  "displayName": "Belgium", 
+  "network": "8.34.208.0", 
+  "longitude": "4.333700", 
+  "name": "Brussels"
+},
+{
+  "latitude": "39.04380", 
+  "displayName": "Virginia", 
+  "network": "8.35.192.0", 
+  "longitude": "-77.48740", 
+  "name": "Ashburn"
+},
+{
+  "latitude": "40.73570", 
+  "displayName": "New Jersey", 
+  "network": "8.35.200.0", 
+  "longitude": "-74.17240", 
+  "name": "Newark"
+},
+{
+  "latitude": "41.261944", 
+  "displayName": "Iowa", 
+  "network": "23.236.48.0", 
+  "longitude": "-95.860833", 
+  "name": "Council Bluffs"
+},
+{
+  "latitude": "50.848381", 
+  "displayName": "Belgium", 
+  "network": "23.251.128.0", 
+  "longitude": "4.34968", 
+  "name": "Saint-Ghislain"
+},
+{
+  "latitude": "37.553674", 
+  "displayName": "Republic of Korea", 
+  "network": "34.64.0.0", 
+  "longitude": "126.991138", 
+  "name": "Seoul"
+},
+{
+  "latitude": "-34.611778259277344", 
+  "displayName": "Argentina", 
+  "network": "34.100.0.0", 
+  "longitude": "-58.41730880737305", 
+  "name": "Buenos Aires"
+},
+{
+  "latitude": "51.50740", 
+  "displayName": "United Kingdom", 
+  "network": "34.124.0.0", 
+  "longitude": "-0.12776", 
+  "name": "London"
+},
+{
+  "latitude": "47.366400", 
+  "displayName": "Switzerland", 
+  "network": "34.124.64.0", 
+  "longitude": "8.554600", 
+  "name": "Zurich"
+},
+{
+  "latitude": "34.684800", 
+  "displayName": "Japan", 
+  "network": "34.124.80.0", 
+  "longitude": "135.514200", 
+  "name": "Osaka"
+},
+{
+  "latitude": "25.03300", 
+  "displayName": "Taiwan", 
+  "network": "34.124.84.0", 
+  "longitude": "121.56500", 
+  "name": "Taipei City"
+},
+{
+  "latitude": "40.7589111328125", 
+  "displayName": "New York", 
+  "network": "34.124.88.0", 
+  "longitude": "-73.97901916503906", 
+  "name": "Manhattan"
+},
+{
+  "latitude": "36.071100", 
+  "displayName": "Tennessee", 
+  "network": "35.188.0.0", 
+  "longitude": "-86.719600", 
+  "name": "Nashville"
+},
+{
+  "latitude": "33.196003", 
+  "displayName": "South Carolina", 
+  "network": "35.190.128.0", 
+  "longitude": "-80.013137", 
+  "name": "Moncks Corner"
+},
+{
+  "latitude": "35.709026", 
+  "displayName": "Japan", 
+  "network": "35.190.224.0", 
+  "longitude": "139.731993", 
+  "name": "Tokyo"
+},
+{
+  "latitude": "24.051796", 
+  "displayName": "Taiwan", 
+  "network": "35.190.240.0", 
+  "longitude": "120.516135", 
+  "name": "Changhua County"
+},
+{
+  "latitude": "-23.55052", 
+  "displayName": "Brazil", 
+  "network": "35.199.0.0", 
+  "longitude": "-46.633309", 
+  "name": "Sao Paulo"
+},
+{
+  "latitude": "45.594565", 
+  "displayName": "Oregon", 
+  "network": "35.199.128.0", 
+  "longitude": "-121.178682", 
+  "name": "The Dalles"
+},
+{
+  "latitude": "1.292900", 
+  "displayName": "Singapore", 
+  "network": "35.216.0.0", 
+  "longitude": "103.854700", 
+  "name": "Singapore"
+},
+{
+  "latitude": "36.308428", 
+  "displayName": "Oklahoma", 
+  "network": "107.167.160.0", 
+  "longitude": "-95.316914", 
+  "name": "Pryor Creek"
+}
+]

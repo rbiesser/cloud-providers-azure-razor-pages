@@ -57,6 +57,8 @@
                         'text-anchor': 'top'
                     }
                 });
+            }
+        );
 
         map.loadImage(
             '/img/Amazon_Web_Services_Logo.png',
@@ -83,13 +85,39 @@
                         'text-anchor': 'top'
                     }
                 });
+            }
+        );
 
-            });
-
-            });
+        map.loadImage(
+            '/img/google-cloud-seeklogo.com.png',
+            function(error, image) {
+                if (error) throw error;
+                map.addImage('gcp', image);
+                map.addLayer({
+                    id: 'gcp',
+                    source: {
+                        type: 'geojson',
+                        data: 'GeoJson?name=gcp' // request from GeoJson route on the localhost
+                    },
+                    type: 'symbol',
+                    paint: {
+                        // Mapbox Style Specification paint properties
+                    },
+                    layout: {
+                        'icon-image': 'gcp',
+                        'icon-size': 0.13,
+                        // Mapbox Style Specification layout properties
+                        'text-field': ['get', 'region'],
+                        'text-font': ['Open Sans Semibold', 'Arial Unicode MS Bold'],
+                        'text-offset': [0, 0.8],
+                        'text-anchor': 'top'
+                    }
+                });
+            }
+        );
 
         map.addControl(new mapboxgl.FullscreenControl({container: document.querySelector('body')}));
-    });
+    }); // end on load function
     </script>
 }
 <div id='map'></div>

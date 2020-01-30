@@ -8,7 +8,7 @@ import json
 # regions since all the ips in the region are given the same geographical locations.
 
 # https://ipstack.com/ access key (free)
-access_key = '<access_key>'
+access_key = 'apikey'
 
 # only need the items in the prefixes array
 ip_ranges = requests.get('https://ip-ranges.amazonaws.com/ip-ranges.json').json()['prefixes']
