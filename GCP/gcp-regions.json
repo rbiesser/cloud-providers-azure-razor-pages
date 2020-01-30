@@ -43,21 +43,21 @@
 },
 {
   "latitude": "37.553674", 
-  "displayName": "Republic of Korea", 
+  "displayName": "Seoul", 
   "network": "34.64.0.0", 
   "longitude": "126.991138", 
   "name": "Seoul"
 },
 {
   "latitude": "-34.611778259277344", 
-  "displayName": "Argentina", 
+  "displayName": "Buenos Aires", 
   "network": "34.100.0.0", 
   "longitude": "-58.41730880737305", 
   "name": "Buenos Aires"
 },
 {
   "latitude": "51.50740", 
-  "displayName": "United Kingdom", 
+  "displayName": "London", 
   "network": "34.124.0.0", 
   "longitude": "-0.12776", 
   "name": "London"
@@ -71,14 +71,14 @@
 },
 {
   "latitude": "34.684800", 
-  "displayName": "Japan", 
+  "displayName": "Osaka", 
   "network": "34.124.80.0", 
   "longitude": "135.514200", 
   "name": "Osaka"
 },
 {
   "latitude": "25.03300", 
-  "displayName": "Taiwan", 
+  "displayName": "Taipei City", 
   "network": "34.124.84.0", 
   "longitude": "121.56500", 
   "name": "Taipei City"
@@ -106,21 +106,21 @@
 },
 {
   "latitude": "35.709026", 
-  "displayName": "Japan", 
+  "displayName": "Tokyo", 
   "network": "35.190.224.0", 
   "longitude": "139.731993", 
   "name": "Tokyo"
 },
 {
   "latitude": "24.051796", 
-  "displayName": "Taiwan", 
+  "displayName": "Changhua County", 
   "network": "35.190.240.0", 
   "longitude": "120.516135", 
   "name": "Changhua County"
 },
 {
   "latitude": "-23.55052", 
-  "displayName": "Brazil", 
+  "displayName": "Sao Paulo", 
   "network": "35.199.0.0", 
   "longitude": "-46.633309", 
   "name": "Sao Paulo"
